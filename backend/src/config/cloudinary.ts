@@ -9,13 +9,13 @@ const apiSecret = process.env.CLOUDINARY_API_SECRET || 'CLOUDINARY_API_SECRET';
 if (!cloudName || !apiKey || !apiSecret) {
   console.error('❌ Cloudinary configuration error: Missing environment variables');
   console.error('Please ensure the following are set in your .env file:');
-  console.error('   - CLOUDINARY_CLOUD_NAME');
-  console.error('   - CLOUDINARY_API_KEY');
-  console.error('   - CLOUDINARY_API_SECRET');
+  console.error('   - CLOUD_NAME');
+  console.error('   - CLOUD_API_KEY');
+  console.error('   - CLOUD_API_SECRET');
   console.error('\nCurrent values:');
-  console.error(`   CLOUDINARY_CLOUD_NAME: ${cloudName || 'NOT SET'}`);
-  console.error(`   CLOUDINARY_API_KEY: ${apiKey ? '***' + apiKey.slice(-4) : 'NOT SET'}`);
-  console.error(`   CLOUDINARY_API_SECRET: ${apiSecret ? '***' + apiSecret.slice(-4) : 'NOT SET'}`);
+  console.error(`   CLOUD_NAME: ${cloudName || 'NOT SET'}`);
+  console.error(`   CLOUD_API_KEY: ${apiKey ? '***' + apiKey.slice(-4) : 'NOT SET'}`);
+  console.error(`   CLOUD_API_SECRET: ${apiSecret ? '***' + apiSecret.slice(-4) : 'NOT SET'}`);
   
   // Don't throw error in development to allow server to start
   // But log warning that uploads won't work

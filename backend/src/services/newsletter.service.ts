@@ -7,8 +7,8 @@ import NewsletterLog from '../models/NewsletterLog.model';
 import { generateNewsletterHTML } from '../templates/emailTemplate';
 
 // Initialize APIs
-const resend = new Resend(process.env.RESEND_API_KEY) || 'RESEND_API_KEY';
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!) || 'GEMINI_API_KEY';
+const resend = new Resend(process.env.RESEND_API_KEY || 'RESEND_API_KEY');
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || 'GEMINI_API_KEY');
 
 interface HNStory {
   title: string;
