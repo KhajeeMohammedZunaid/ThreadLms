@@ -1,0 +1,5 @@
+{
+  "name": "ThreadLms",
+  "description": "A modern Learning Management System (LMS) built with React, featuring a dashboard, course catalog, IDE, and sections for certificates and badges.",
+  "requestFramePermissions": []
+}

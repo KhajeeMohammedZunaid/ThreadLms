@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LMS Platform</title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <!-- PrismJS theme for syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
+    <!-- React Flow CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reactflow@11.11.3/dist/style.css" />
+    <!-- Skulpt for Python execution -->
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt-stdlib.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              fancy: ['"Dancing Script"', 'cursive'],
+            },
+            colors: {
+              'primary': '#6366f1', // Indigo 500
+              'primary-dark': '#4f46e5', // Indigo 600
+              'secondary': '#14b8a6', // Teal 500
+              'secondary-dark': '#0d9488', // Teal 600
+              'faculty-primary': '#16a34a', // Green 600
+              'faculty-primary-dark': '#15803d', // Green 700
+              'faculty-sidebar': '#14532d', // Dark Green 900
+              'light-bg': '#f8fafc', // Slate 50
+              'content': '#64748b', // Slate 500
+              'heading': '#1e293b', // Slate 800
+              'dark-bg': '#0f172a', // Slate 900
+              'dark-sidebar': '#1e293b', // Slate 800
+              'border': '#e2e8f0', // Slate 200
+              'dark-border': '#334155', // Slate 700
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Main Custom Scrollbar Styles */
+      ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: #f1f5f9; /* slate-100 */
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #cbd5e1; /* slate-300 */
+        border-radius: 10px;
+        border: 2px solid #f1f5f9; /* Creates padding around thumb */
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #94a3b8; /* slate-400 */
+      }
+      /* Firefox */
+      html {
+        scrollbar-width: thin;
+        scrollbar-color: #cbd5e1 #f1f5f9;
+      }
+
+      /* Utility: Hide scrollbar */
+      .scrollbar-hide::-webkit-scrollbar { display: none; }
+      .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+      /* Utility: Minimal scrollbar for small areas like notes */
+      .note-content-scrollbar::-webkit-scrollbar { width: 5px; }
+      .note-content-scrollbar::-webkit-scrollbar-track { background: transparent; }
+      .note-content-scrollbar::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.2); border-radius: 10px; }
+      .note-content-scrollbar { scrollbar-width: thin; scrollbar-color: rgba(0,0,0,0.2) transparent; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.3",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^11.3.11",
+    "react-simple-code-editor": "https://aistudiocdn.com/react-simple-code-editor@^0.13.1",
+    "prismjs": "https://aistudiocdn.com/prismjs@^1.29.0",
+    "prismjs/": "https://aistudiocdn.com/prismjs@^1.30.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.23.0",
+    "reactflow": "https://aistudiocdn.com/reactflow@^11.11.4",
+    "jspdf": "https://aistudiocdn.com/jspdf@^2.5.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.414.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-light-bg font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
