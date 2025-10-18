@@ -36,7 +36,7 @@ verifyCloudinaryConfig();
 app.use(helmet()); // Security headers
 app.use(compression()); // Compress responses
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: process.env.FRONTEND_URL || 'https://threadlms.netlify.app',
   credentials: true
 }));
 app.use(express.json({ limit: '10mb' }));
