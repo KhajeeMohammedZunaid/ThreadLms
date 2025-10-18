@@ -26,6 +26,9 @@ import jobsRoutes from './routes/jobs.routes';
 const app: Application = express();
 const PORT = process.env.PORT || 5000;
 
+// Trust proxy for Railway deployment
+app.set('trust proxy', 1);
+
 // Connect to MongoDB
 connectDB();
 

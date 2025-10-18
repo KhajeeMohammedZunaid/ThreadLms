@@ -9,6 +9,8 @@ export const rateLimiter = rateLimit({
   },
   standardHeaders: true,
   legacyHeaders: false,
+  // Trust proxy and skip failed requests
+  skipFailedRequests: true,
 });
 
 export const authLimiter = rateLimit({
