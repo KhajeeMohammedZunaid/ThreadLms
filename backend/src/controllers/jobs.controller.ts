@@ -14,7 +14,7 @@ export const searchJobs = async (req: Request, res: Response) => {
         num_pages: '1'
       },
       headers: {
-        'x-rapidapi-key': process.env.RAPIDAPI_KEY,
+        'x-rapidapi-key': process.env.RAPIDAPI_KEY || 'RAPIDAPI_KEY',
         'x-rapidapi-host': 'jsearch.p.rapidapi.com'
       }
     };

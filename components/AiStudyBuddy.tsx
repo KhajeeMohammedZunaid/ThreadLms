@@ -26,7 +26,7 @@ const AiStudyBuddy: React.FC<{ course: AppCourse }> = ({ course }) => {
     const initializeChat = () => {
         if (chatRef.current) return;
 
-        const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+        const ai = new GoogleGenAI({ apiKey: process.env.API_KEY  });
         
         // Create a concise summary of the course content for the system instruction
         const courseContentSummary = course.content.map(section => 
