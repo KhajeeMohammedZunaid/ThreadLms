@@ -64,15 +64,15 @@ A comprehensive learning management system built with the MERN stack, designed t
 
 ## 📸 Screenshots
 
-| Dashboard View | Course Management |
+| Todos(Sticky wall) | Resume BUilder |
 |---------------|-------------------|
 | ![Dashboard](public/Screenshot%202025-10-18%20101805.png) | ![Courses](public/Screenshot%202025-10-18%20101843.png) |
 
-| Quiz Builder | Resume Builder |
+| Branch specific IDE | Newsletter |
 |-------------|----------------|
 | ![Quiz](public/Screenshot%202025-10-18%20101957.png) | ![Resume](public/Screenshot%202025-10-18%20102024.png) |
 
-| IDE Interface | Collaboration |
+| LeaderBoard | Dashboard |
 |--------------|---------------|
 | ![IDE](public/Screenshot%202025-10-18%20102113.png) | ![Collaborate](public/Screenshot%202025-10-18%20102408.png) |
 
