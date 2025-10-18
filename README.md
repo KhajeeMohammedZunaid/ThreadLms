@@ -1,3 +1,5 @@
+**Built with ❤️ By ThreadDev**
+
 # ThreadLMS - Learning Management System
 
 A comprehensive learning management system built with the MERN stack, designed to provide an interactive and engaging educational experience for students and faculty.
@@ -136,4 +138,4 @@ This project is licensed under the MIT License.
 
 ---
 
-**Built with ❤️ for better education**
+**Built with ❤️ By ThreadDev**
