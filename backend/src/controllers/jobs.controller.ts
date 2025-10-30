@@ -6,7 +6,7 @@ export const searchJobs = async (req: Request, res: Response): Promise<void> => 
     const { query = 'developer', location = '', page = '1' } = req.query;
 
     // Check if RAPIDAPI_KEY is available
-    if (!process.env.RAPIDAPI_KEY) {
+    if (!process.env.RAPIDAPI_KEY || process.env.RAPIDAPI_KEY === 'RAPIDAPI_KEY') {
       res.status(500).json({
         status: 'error',
         message: 'Job search service is not configured. Please contact administrator.'
